@@ -29,9 +29,16 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+typings
+
+# Public build result directory
+public
 
 # Optional npm cache directory
 .npm
+
+# VSCode folder
+.vscode
 
 # Optional REPL history
 .node_repl_history
