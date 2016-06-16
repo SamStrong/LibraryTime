@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": true
+  },
+  "files": [
+    "app.ts",
+    "../../typings/tsd.d.ts",
+    "require.d.ts"
+  ]
+}
