@@ -2,9 +2,31 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.min.css')
   body
+    .top-bar
+      .top-bar-left
+        ul.dropdown.menu(data-dropdown-menu='')
+          li.menu-text Site Title
+          li
+            a(href='#') One
+          li
+            a(href='#') Two
+          li
+            a(href='#') Three
+      .top-bar-right
+        ul.menu
+          li
+            input(type='search', placeholder='Search')
+          li
+            button.button(type='button') Search
+
     block content
+        
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
-    script(src='https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js')
     script(src='/javascripts/site.js')
+    script.
+      $(function() {
+        $(document).foundation();
+      });

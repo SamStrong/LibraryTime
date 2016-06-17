@@ -1,6 +1,43 @@
 html, body {
-    margin:10px;
-    padding:20px;
-    height:100%;
-    overflow:hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*body {
+    display: flex;
+    flex-direction: column;
+}*/
+
+.box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Styling and laying out the schedular */
+#scheduler_here {
+    /*width:100%;
+    height:100%;*/
+    /*min-height: 100vh;*/
+    width: 100%;
+    height: 800px;
+    /*flex: 1;*/
+}
+
+/* Setting the top-bar-right positioning using the flex layout */
+.top-bar-right ul {
+  justify-content: flex-end;
+}
+
+/* Scheduler overrides */
+/* Fixes the table padding overridden by Foundation */
+#scheduler_here table tbody td,
+#scheduler_here table tbody th {
+    padding: 0;
+}
+
+.dhx_section_time select {
+    width: auto;
+    height: auto;
 }

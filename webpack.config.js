@@ -1,11 +1,11 @@
 var webpack = require('webpack');
-var nodeExternals = require('webpack-node-externals');
+//var nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   target: 'node',
-  externals: [nodeExternals({
-    whitelist: ['dhtmlx-scheduler']
-  })],
+  // externals: [nodeExternals({
+  //   whitelist: ['dhtmlx-scheduler']
+  // })],
   entry: './src/typescript/app.ts',
   output: {
     path: __dirname + '/public',
