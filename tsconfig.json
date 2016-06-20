@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+      "outDir": "./public/javascripts/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react"
+  },
+  "files": [
+    "./typings/index.d.ts",
+    "./typings/require.d.ts",
+    //"./src/typescript/Hello.tsx",
+    //"./src/index.tsx"
+    "./src/typescript/app.tsx"
+  ]
+}
